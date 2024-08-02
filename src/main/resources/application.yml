@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: biserinka
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=biserinka
+    username: user
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  docker:
+    compose:
+      enabled: false
+
+security:
+  jwt:
+    secret-key: key
+    expiration-time: 3600
